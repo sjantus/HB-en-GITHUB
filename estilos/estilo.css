@@ -47,7 +47,7 @@ p{
 }
 
 .headerPrincipal{
-   background-color: #e2d2a8;
+   background: linear-gradient(#e2d2a8, #f0e8d6);
    grid-area: headerPrincipal;
    display: flex;
    flex-direction: row;
@@ -72,7 +72,6 @@ nav {
   flex-direction: row;
   height: 70px;
   list-style-type: none;
-  background-color: #3c6142;
   margin: 1rem;
   
 }
@@ -82,6 +81,7 @@ nav {
   margin: 0.7rem;
   padding: 0.5em;
   background-color: #F4A261;
+  border-radius: 3px;
   text-decoration: none;
   font-size: 18px;
   height: 45px;
@@ -97,6 +97,7 @@ nav {
 .menu li :hover {
     color: white;
     background-color: #213a25;
+    border-radius: 3px;
 }
 
 
@@ -119,7 +120,7 @@ flex-direction: column;
 align-items: center;
 width: 95% auto;
 padding: 30px 50px;
-background: #213a25; 
+background: linear-gradient( #213a25 , #33663c); 
 grid-area:  divIndex1;
 }
 
@@ -161,7 +162,7 @@ grid-area:  divIndex1;
 
 .mainQuienesSomos {
     grid-area: mainQuienesSomos ;
-    background-color:#213a25;
+    background: linear-gradient( #213a25 , #213a25ad);
     width: 95% auto;
     display: flex;
     flex-direction: column ;
@@ -235,10 +236,20 @@ grid-area:  divIndex1;
     border: solid 2px #F4A261;
  }
 
+ .mainGaleriaProd h2 {
+     color: beige;
+     margin: 5px 5px;
+ }
+
+
 .mainGaleriaProd img:hover {
     opacity: 1;
     border:2px double #e2d2a8;
+    transform: scale(1.1 ,1.1);
+    transition: 0.3s  
 }
+
+
 
 .contenedorPadreC {
     height: 200px;
@@ -362,8 +373,11 @@ grid-area:  divIndex1;
 .footer img { 
     width: 40px;
     text-decoration: none;
+}
 
-
+.footer li:hover {
+    transform: scale(1.1 ,1.1);
+    transition: 0.5s ;
 }
 
 .footer li  {
@@ -378,6 +392,7 @@ grid-area:  divIndex1;
 text-decoration: none;
 
 }
+
 
 @media only screen and (max-width:350px) {
 
@@ -462,8 +477,8 @@ text-decoration: none;
     .divIndex1 img {
         width: 200px;
         height: 200px;
-    
     }
+    
     
     .divIndex1 p {
       
@@ -496,6 +511,8 @@ text-decoration: none;
         text-align: center;
         font-size: 16px;
     }
+
+    
 
 
 }
@@ -931,6 +948,8 @@ text-decoration: none;
         text-align: center;
         font-size: 16px;
     }
+
+    
 
 }
 
